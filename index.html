@@ -304,7 +304,7 @@ var __values = (this && this.__values) || function(o) {
     var GRP = [['Data Master', ['guru', 'siswa', 'kel', 'ref', 'cp', 'kokur', 'ekstra']], ['Rapor', ['ukur', 'hadir', 'input', 'cetak']]];
     var T = null, U = null, D = {}, RP = {}, R = {}, CUR = '', H = [], FS = {}, PBn = 0, bz = 0;
     var esc = function (s) { return String(s !== null && s !== void 0 ? s : '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); };
-    var img = function (id) { return id ? "https://lh3.googleusercontent.com/d/".concat(id) : ''; };
+    var img = function (id) { return id ? (String(id).indexOf('data:') === 0 ? id : "https://drive.google.com/thumbnail?sz=w1000&id=".concat(id)) : ''; };
     var tgl = function (i) { if (!i)
         return ''; var d = new Date(i + 'T00:00:00'); return isNaN(d) ? i : "".concat(d.getDate(), " ").concat(BLN[d.getMonth()], " ").concat(d.getFullYear()); };
     /* ---------- cache data (dimuat sekali saat login) ---------- */
